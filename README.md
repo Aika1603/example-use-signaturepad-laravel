@@ -13,3 +13,6 @@ source : https://github.com/szimek/signature_pad
 # How to use
 
 * copy dir **public/assets/** to your dir project
+
+![This is an image](example/ss-1.png)
+![This is an image](example/ss-2.png)

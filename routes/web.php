@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\SignatureController;
+use App\Http\Controllers\PdfController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,9 @@ use App\Http\Controllers\SignatureController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [PdfController::class, 'index']);
+Route::get('/pdf-generator', [PdfController::class, 'index']);
 
-Route::get('/', [SignatureController::class, 'index']);
+Route::get('/signature', [SignatureController::class, 'index']);
 Route::post('/store', [SignatureController::class, 'store'])->name('store');
+
